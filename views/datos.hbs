@@ -1,0 +1,27 @@
+
+
+<div class="jumbotron">
+   
+    <div class="table">
+        <table class="thead-dark">
+            <tr>
+                <th>Nombre</th>
+                <th>Precio</th>
+                <th>Foto</th>
+            </tr>
+    
+
+            {{#each productos}}
+            <tr>
+                <td>{{this.nombre}}</td>
+                <td>${{this.precio}}</td>
+                <td><img width="50" src={{this.foto}} alt="not found"></td>
+
+            </tr>
+            {{/each}}
+        </table>
+    </div>
+   
+    <br>
+    <a href="/" type="button" class="btn btn-primary">Cargar un nuevo producto</a>
+    

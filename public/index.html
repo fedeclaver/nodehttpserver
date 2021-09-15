@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="/stylesheets/main.css">
+  <title>Document</title>
+</head>
+
+<body>
+
+    <div class="jumbotron">
+        <div class="container">
+            <h1>Carga de Productos with Handlebars</h1>
+            <p></p>
+        </div>
+    </div>
+  
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <br>
+                <a href="/productos" type="button" class="btn btn-primary">Listar Productos</a>
+                <br>
+                <form action="/productos" method="post" role="form" enctype="application/x-www-form-urlencoded">
+                    <legend>Ingrese los datos debajo</legend>
+    
+                    <div class="form-group">
+                        <label for="first_name">Nombre</label>
+                        <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Nombre">
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="precio">Precio</label>
+                        <input type="text" class="form-control" name="precio" id="precio" placeholder="Precio">
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="foto">Url Foto</label>
+                        <input type="text" class="form-control" name="foto" id="foto" placeholder="URL Foto">
+                    </div>
+                    <div style="align-content:flex-end;">
+                        <button type="submit" class="btn btn-primary">Nuevo</button>
+                    </div>
+                    
+                </form>
+               
+     
+            </div>
+        </div>
+    </div>
+            
+            
+
+</body>
+
+</html>
